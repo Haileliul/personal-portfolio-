@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+    width: 100%;
+    max-width: 1800px;
+    /* Adjust as needed */
+    margin: 0 auto;
+}
+
+
+/* Define responsive styles using media queries */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 0 10px;
+    }
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: local("Poppins-Medium"),
+        url('./assets/font/Poppins-Medium.ttf') format("truetype")
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: local("Poppins-Regular"),
+        url('./assets/font/Poppins-Regular.ttf') format("truetype")
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: local("Poppins-SemiBold"),
+        url('./assets/font/Poppins-SemiBold.ttf') format("truetype")
+}
+
+@font-face {
+    font-family: "Poppins-Thin";
+    src: local("Poppins-Thin"),
+        url('./assets/font/Poppins-Thin.ttf') format("truetype")
+}
