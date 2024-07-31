@@ -1,27 +1,50 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Headroom from "react-headroom";
+import { Element } from "react-scroll";
+import Com from "./components";
+import Pages from "./pages";
 
-import Landing_page from "./pages/landingPage";
-import About_page from "./pages/aboutPage";
-import Project_page from "./pages/projectPage";
-import Contact_page from "./pages/contactPage";
 import "./index.css";
 
 export default function App() {
   let [loading, setLoading] = useState(false);
-  const navbarItemStyle = {
-    padding: "10px 20px",
-    // margin: "0 10px",
-    // borderRadius: "5px",
-    backgroundColor: "#000000",
-    color: "#fff",
-    textDecoration: "none",
-    opacity: 0.4,
+  let [darkMode, setDarkMode] = useState(false);
+
+  const dark = {
+    backgroundColor: "black",
+    color: "white",
+    fontFamily: "Poppins, sans-serif",
+    transition: "background-color 0.3s ease, color 0.3s ease",
+    position: "relative",
+  };
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
   };
 
   return (
-    <div className="app-container ">
+    <div className={darkMode ? "dark" : ""}>
+      <Headroom className="bg-Darker_purple">
+        <Com.Navbar />
+      </Headroom>
+
+      <div className=" ">
+        <Element name="LandingPage">
+          <Pages.LandingPage />
+        </Element>
+        <Element name="AboutPage">
+          <Pages.AboutPage />
+        </Element>
+        <Element name="ProjectPage">
+          <Pages.ProjectPage />
+        </Element>
+        <Element name="ContactPage">
+          <Pages.ContactPage />
+        </Element>
+      </div>
+    </div>
+
+    /*  <div className="app-container ">
       <Headroom style={navbarItemStyle} className="bg-Darker_purple">
         <Navbar />
       </Headroom>
@@ -31,6 +54,6 @@ export default function App() {
         <Project_page />
         <Contact_page />
       </div>
-    </div>
+    </div> */
   );
 }

@@ -40,3 +40,39 @@
     src: local("Poppins-Thin"),
         url('./assets/font/Poppins-Thin.ttf') format("truetype")
 }
+
+
+
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent background */
+    /* border-radius: 10px; */
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support for blur */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Light border for contrast */
+    /* padding: 20px; */
+    /* Padding inside the container */
+    /* margin: 20px; */
+    /* Margin outside the container */
+}
+
+.container {
+    max-width: 1400px;
+    /* max-height: 768px; */
+    /* Fill the entire viewport height */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 0 0;
+    /* Some padding on the sides */
+    display: flex;
+    /* Use flexbox to control layout */
+    flex-direction: column;
+    /* Arrange children in a column */
+}

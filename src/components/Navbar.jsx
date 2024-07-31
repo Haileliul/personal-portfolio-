@@ -9,10 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center py-4 px-8 bg-gray-800">
+    <nav className="flex justify-between items-center py-4 px-8 glass-container">
       <div className="flex items-center">
         <Link
-          to="home"
+          to="LandingPage"
           smooth={true}
           duration={500}
           className="text-white text-xl mr-4 cursor-pointer"
@@ -20,11 +20,11 @@ const Navbar = () => {
           Logo
         </Link>
       </div>
-      <div className="hidden md:flex flex-grow justify-end items-center">
+      <div className="hidden md:flex flex-grow justify-end items-center px-20 py-2">
         <ul className="flex flex-row gap-10">
           <li>
             <Link
-              to="home"
+              to="LandingPage"
               smooth={true}
               duration={500}
               spy={true}
@@ -35,7 +35,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="about"
+              to="AboutPage"
               smooth={true}
               duration={500}
               spy={true}
@@ -46,7 +46,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="projects"
+              to="ProjectPage"
               smooth={true}
               duration={500}
               spy={true}
@@ -57,7 +57,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="contact"
+              to="ContactPage"
               smooth={true}
               duration={500}
               spy={true}
@@ -69,7 +69,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-white focus:outline-none">
+        <button onClick={toggleMenu} className="text-white  focus:outline-none">
           <svg
             className="w-6 h-6"
             fill="none"
@@ -87,11 +87,11 @@ const Navbar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-Darker_purple  opacity-100">
+        <div className="md:hidden absolute top-full left-0 right-0 glass-container opacity-100">
           <ul className="flex flex-col gap-4 py-4 px-8 items-end text-neutral_tow ">
             <li className=" ">
               <Link
-                to="home"
+                to="LandingPage"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -103,7 +103,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="about"
+                to="AboutPage"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -115,7 +115,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="projects"
+                to="ProjectPage"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -127,7 +127,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="contact"
+                to="ContactPage"
                 smooth={true}
                 duration={500}
                 spy={true}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Com from "../components";
+import Image from "../assets";
 
 const projectPage = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -7,21 +9,47 @@ const projectPage = () => {
     setToggleState(index);
   };
 
-  const data = ["0", "1", "2", "3", "0", "1", "2", "3"];
+  const projects = {
+    web: [
+      { img: Image.I1, title: "Web Project 1", route: "/webproject1" },
+      { img: Image.I2, title: "Web Project 2", route: "/webproject2" },
+      { img: Image.I1, title: "Web Project 1", route: "/webproject1" },
+      { img: Image.I2, title: "Web Project 2", route: "/webproject2" },
+      { img: Image.I1, title: "Web Project 1", route: "/webproject1" },
+      { img: Image.I2, title: "Web Project 2", route: "/webproject2" },
+    ],
+    mobile: [
+      { img: Image.I3, title: "Mobile Project 1", route: "/mobileproject1" },
+      { img: Image.I4, title: "Mobile Project 2", route: "/mobileproject2" },
+    ],
+    others: [
+      { img: Image.I5, title: "Other Project 1", route: "/otherproject1" },
+      { img: Image.I6, title: "Other Project 2", route: "/otherproject2" },
+    ],
+  };
+
+  let currentProjects;
+  if (toggleState === 1) {
+    currentProjects = projects.web;
+  } else if (toggleState === 2) {
+    currentProjects = projects.mobile;
+  } else {
+    currentProjects = projects.others;
+  }
 
   return (
     <div
-      className="w-full h-screen bg-gradient-to-b to-neutral_tow   via-Blue_black  from-neutral_tow "
+      className="container bg-gradient-to-tr to-Blue_black from-Blue_black via-neutral_tow"
       id="projects"
     >
-      <div className="w-full h-full flex flex-col  inset-0 items-center text-neutral_tow">
-        <p className="  my-5 text-2xl">Projects</p>
-        <div className="w-full h-full flex flex-col px-10">
-          <div className="w-[400px] h-[50px] flex self-center ">
-            {/* This is place where the tabs will been shown */}
+      <div className="flex flex-col inset-0 items-center text-neutral_tow">
+        <p className="my-5 text-2xl text-Brighter_purple">Projects</p>
+        <div className="flex flex-col px-10">
+          <div className="w-[400px] h-[50px] flex self-center">
+            {/* This is place where the tabs will be shown */}
             <button
-              className={`  flex-1 ${
-                toggleState == 1 ? "bg-orange" : "bg-Darker_purple"
+              className={`flex-1 ${
+                toggleState === 1 ? "bg-acitive" : "bg-Darker_purple"
               } rounded-l-3xl`}
               onClick={() => {
                 toggleTab_hundler(1);
@@ -30,8 +58,8 @@ const projectPage = () => {
               WebSite
             </button>
             <button
-              className={`  flex-1 ${
-                toggleState == 2 ? "bg-orange" : "bg-Darker_purple"
+              className={`flex-1 ${
+                toggleState === 2 ? "bg-acitive" : "bg-Darker_purple"
               }`}
               onClick={() => {
                 toggleTab_hundler(2);
@@ -40,8 +68,8 @@ const projectPage = () => {
               Mobile
             </button>
             <button
-              className={`  flex-1 ${
-                toggleState == 3 ? "bg-orange" : "bg-Darker_purple"
+              className={`flex-1 ${
+                toggleState === 3 ? "bg-acitive" : "bg-Darker_purple"
               } rounded-r-3xl`}
               onClick={() => {
                 toggleTab_hundler(3);
@@ -50,12 +78,14 @@ const projectPage = () => {
               Others
             </button>
           </div>
-          <div className=" w-full h-full    my-5 grid lg:grid-cols-4  md: grid-cols-3 sm:grid-cols-2 xsm:grid-cols-2 ">
-            {data.map(() => {
+          <div className="max-w-screen max-h- flex flex-wrap gap-5 py-5 items-center justify-center">
+            {currentProjects.map((project) => {
               return (
-                <div className=" lg:row-span-1 sm:row-span-2   bg-background col-span-1 mr-3 mb-3 shadow-md shadow-Brighter_purple rounded-md">
-                  <p>This is me </p>
-                </div>
+                <Com.CardOfpro
+                  img={project.img}
+                  title={project.title}
+                  route={project.route}
+                />
               );
             })}
           </div>

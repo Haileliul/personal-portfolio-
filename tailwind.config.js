@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/lib/esm/**/*.js",
+  ],
   theme: {
     screens: {
       xsm: "250px",
@@ -25,20 +29,19 @@ export default {
     },
     colors: {
       brown: "#6A470F",
-      // darken_Green: "#1A261C",
       Darker_purple: "#070720",
       Blue_black: " #000033",
       Brighter_purple: "#27314E",
       bright_green: "#91D996",
       deep_green: "#45664B",
-      orange: "#F27405",
+      acitive: "#F27405",
       neutral_one: "#ffffff",
       neutral_tow: "#eeeeee",
-      background:"#ffffff"
+      background: "#ffffff",
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
 
 //  ======================This is the defalt=============================
