@@ -5,6 +5,9 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 ## Demo
 
 Check out the live demo of my portfolio [here](https://personal-portfolio-7jpe.onrender.com/).
+ ```bash
+ https://personal-portfolio-7jpe.onrender.com/
+ ```
 
 ## Features
 
@@ -30,16 +33,9 @@ Check out the live demo of my portfolio [here](https://personal-portfolio-7jpe.o
 - **Deployment:**
   - Vercel / Netlify / GitHub Pages
 
-## Installation
-
 ### Prerequisites
 
 - Node.js (v14 or higher)
 - npm 
 
-### Steps
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
