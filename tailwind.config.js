@@ -35,6 +35,7 @@ export default {
       bright_green: "#91D996",
       deep_green: "#45664B",
       acitive: "#F27405",
+      acitive2: "#F27459",
       neutral_one: "#ffffff",
       neutral_tow: "#eeeeee",
       background: "#ffffff",

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTelegram, FaLinkedin } from "react-icons/fa";
+import { FaTelegram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 function Card_About(props) {
@@ -11,8 +11,9 @@ function Card_About(props) {
     ],
     Social_Media: {
       Gmail: "hailetechlover@gmail.com",
-      Telegram: "",
-      linkedIn: "",
+      Telegram: "https://t.me/HB767",
+      linkedIn: "https://www.linkedin.com/in/haileliul-baye-b10495234/",
+      github: "https://github.com/Haileliul",
     },
   };
 
@@ -25,14 +26,17 @@ function Card_About(props) {
         <img src={props.img} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="flex w-full  justify-evenly my-2 text-3xl">
-        <a href={Contacts["Social_Media"]["Gmail"]}>
+        <a href={`mailto:${Contacts["Social_Media"]["Gmail"]}`} target="_blank">
           <SiGmail className="hover:text-acitive hover:text-4xl" />
         </a>
-        <a href={Contacts["Social_Media"]["Telegram"]}>
+        <a href={Contacts["Social_Media"]["Telegram"]} target="_blank">
           <FaTelegram className="hover:text-acitive hover:text-4xl" />
         </a>
-        <a href={Contacts["Social_Media"]["linkedIn"]}>
+        <a href={Contacts["Social_Media"]["linkedIn"]} target="_blank">
           <FaLinkedin className="hover:text-acitive hover:text-4xl" />
+        </a>
+        <a href={Contacts["Social_Media"]["github"]} target="_blank">
+          <FaGithub className="hover:text-acitive hover:text-4xl" />
         </a>
       </div>
     </div>

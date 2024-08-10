@@ -38,15 +38,11 @@ const projectPage = () => {
   }
 
   return (
-    <div
-      className="container bg-gradient-to-tr to-Blue_black from-Blue_black via-neutral_tow"
-      id="projects"
-    >
-      <div className="flex flex-col inset-0 items-center text-neutral_tow">
+    <div className="container bg-gradient-to-tr  bg-gray-50" id="projects">
+      <div className="flex flex-col inset-0 items-center text-neutral_tow ">
         <p className="my-5 text-2xl text-Brighter_purple">Projects</p>
-        <div className="flex flex-col px-10">
-          <div className="w-[400px] h-[50px] flex self-center">
-            {/* This is place where the tabs will be shown */}
+        <div className="flex flex-col px-10 ">
+          <div className="w-[400px] h-[50px] flex self-center mb-5">
             <button
               className={`flex-1 ${
                 toggleState === 1 ? "bg-acitive" : "bg-Darker_purple"
@@ -78,18 +74,19 @@ const projectPage = () => {
               Others
             </button>
           </div>
-          <div className="max-w-screen max-h- flex flex-wrap gap-5 py-5 items-center justify-center">
-            {currentProjects.map((project) => {
-              return (
-                <Com.CardOfpro
-                  img={project.img}
-                  title={project.title}
-                  route={project.route}
-                />
-              );
-            })}
-          </div>
         </div>
+      </div>
+
+      <div className="max-w-screen  flex flex-wrap gap-5 py-5 items-center justify-center bg-gray-50 mx-10">
+        {currentProjects.map((project) => {
+          return (
+            <Com.CardOfpro
+              img={project.img}
+              title={project.title}
+              route={project.route}
+            />
+          );
+        })}
       </div>
     </div>
   );

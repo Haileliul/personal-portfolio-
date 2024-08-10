@@ -53,9 +53,9 @@
     /* Subtle shadow for depth */
     backdrop-filter: blur(10px);
     /* Blur effect */
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
     /* Safari support for blur */
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0);
     /* Light border for contrast */
     /* padding: 20px; */
     /* Padding inside the container */

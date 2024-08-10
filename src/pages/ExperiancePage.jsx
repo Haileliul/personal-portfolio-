@@ -1,6 +1,11 @@
 import React from "react";
+import Com from "../components";
 const ExperiancePage = () => {
-  return <div>This is the place for Experiance page</div>;
+  return (
+    <div>
+      <Com.TimeLIne />
+    </div>
+  );
 };
 
 export default ExperiancePage;

@@ -15,53 +15,47 @@ const Navbar = () => {
           to="LandingPage"
           smooth={true}
           duration={500}
-          className="text-white text-xl mr-4 cursor-pointer"
+          className="hover:text-acitive text-xl mr-4 cursor-pointer"
         >
           Logo
         </Link>
       </div>
-      <div className="hidden md:flex flex-grow justify-end items-center px-20 py-2">
-        <ul className="flex flex-row gap-10">
-          <li>
-            <Link
-              to="LandingPage"
-              smooth={true}
-              duration={500}
-              spy={true}
-              className="text-white"
-            >
+      <div className="hidden md:flex flex-grow justify-end items-center px-5 ">
+        <ul className="flex flex-row gap-2">
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
+            <Link to="LandingPage" smooth={true} duration={500} spy={true}>
               Home
             </Link>
           </li>
-          <li>
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
             <Link
               to="AboutPage"
               smooth={true}
               duration={500}
               spy={true}
-              className="text-white"
+              className="hover:text-acitive"
             >
               About
             </Link>
           </li>
-          <li>
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
             <Link
               to="ProjectPage"
               smooth={true}
               duration={500}
               spy={true}
-              className="text-white"
+              className="hover:text-acitive"
             >
               Projects
             </Link>
           </li>
-          <li>
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
             <Link
               to="ContactPage"
               smooth={true}
               duration={500}
               spy={true}
-              className="text-white"
+              className="hover:text-acitive"
             >
               Contact
             </Link>
@@ -69,7 +63,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-white  focus:outline-none">
+        <button
+          onClick={toggleMenu}
+          className="hover:text-acitive focus:outline-none"
+        >
           <svg
             className="w-6 h-6"
             fill="none"
@@ -89,13 +86,13 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 glass-container opacity-100">
           <ul className="flex flex-col gap-4 py-4 px-8 items-end text-neutral_tow ">
-            <li className=" ">
+            <li>
               <Link
                 to="LandingPage"
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-white"
+                className="text-black hover:text-acitive"
                 onClick={toggleMenu}
               >
                 Home
@@ -107,7 +104,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-white"
+                className="text-black hover:text-acitive"
                 onClick={toggleMenu}
               >
                 About
@@ -119,7 +116,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-white"
+                className="text-black hover:text-acitive"
                 onClick={toggleMenu}
               >
                 Projects
@@ -131,7 +128,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-white"
+                className="text-black hover:text-acitive"
                 onClick={toggleMenu}
               >
                 Contact
