@@ -1,0 +1,11 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "This is back end made for personal portifolio project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haileliul",
+  "license": "ISC"
+}
