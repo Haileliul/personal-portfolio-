@@ -14,6 +14,19 @@ module.exports = sequelize.define(
     },
     userType: {
       type: DataTypes.ENUM("0", "1"),
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "userType cannot be null ",
+        },
+        notEmpty: {
+          msg: "userType cannot be empty",
+        },
+        isIn: {
+          args: [["0", "1"]],
+          msg: "userType must be 0 or 1",
+        },
+      },
     },
     firstName: {
       type: DataTypes.STRING,

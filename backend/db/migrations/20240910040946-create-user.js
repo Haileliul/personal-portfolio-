@@ -11,6 +11,7 @@ module.exports = {
       },
       userType: {
         type: Sequelize.ENUM("0", "1"),
+        allowNull: false,
       },
       firstName: {
         type: Sequelize.STRING,
@@ -20,6 +21,7 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING,
+        unique: true,
       },
       password: {
         type: Sequelize.STRING,

@@ -13,6 +13,11 @@ module.exports = sequelize.define(
     },
     title: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    projecttype: {
+      type: DataTypes.ENUM("0", "1", "3"),
+      allowNull: false,
     },
     description: {
       type: DataTypes.STRING,

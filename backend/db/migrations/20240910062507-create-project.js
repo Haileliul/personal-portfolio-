@@ -11,12 +11,18 @@ module.exports = {
       },
       title: {
         type: Sequelize.STRING,
+        allowNull: false,
+      },
+      projecttype: {
+        type: Sequelize.ENUM("0", "1", "3"),
+        allowNull: false,
       },
       description: {
         type: Sequelize.STRING,
       },
       img_url: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
       url_link: {
         type: Sequelize.STRING,

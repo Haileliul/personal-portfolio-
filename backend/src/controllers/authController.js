@@ -81,4 +81,30 @@ const login = async (req, res, next) => {
   });
 };
 
-module.exports = { signup, login };
+const authentication = async (req, res, next) => {
+  let idToken = "";
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startwith("Bearer")
+  ) {
+    idToken = req.headers.authorization.split(" ")[1];
+  }
+  if (!idToken) {
+    return res.status(400).json({
+      status: "fail",
+      message: "Please login to get access",
+    });
+  }
+  const tokenDetail = jwt.verify.idToken(idToken, process.env.JWT_SECRET_KEY);
+  const freshUser = user.findByPk(tokenDetail.id);
+  if (!freshUser) {
+    return res.status(400).json({
+      status: "fail",
+      message: "User no longer exists",
+    });
+  }
+  req.user = freshUser;
+  return next();
+};
+
+module.exports = { signup, login, authentication };
