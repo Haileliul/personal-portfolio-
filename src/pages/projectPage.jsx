@@ -40,7 +40,10 @@ const projectPage = () => {
   return (
     <div className="container bg-gradient-to-tr  bg-gray-50" id="projects">
       <div className="flex flex-col inset-0 items-center text-neutral_tow ">
-        <p className="my-5 text-2xl text-Brighter_purple">Projects</p>
+        <p className="my-5 text-2xl"></p>
+        <p className="text-3xl font-Poppins_SemiBold mb-5  text-Brighter_purple">
+          Projects
+        </p>
         <div className="flex flex-col px-10 ">
           <div className="w-[400px] h-[50px] flex self-center mb-5">
             <button

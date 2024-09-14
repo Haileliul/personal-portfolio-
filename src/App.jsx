@@ -41,6 +41,7 @@ export default function App() {
         <Element name="ContactPage">
           <Pages.ContactPage />
         </Element>
+        <Com.Footerbar />
       </div>
     </div>
 

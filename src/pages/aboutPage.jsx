@@ -27,18 +27,20 @@ const aboutPage = () => {
         <div className=" md:col-span-4 lg:col-span-4 sm:col-span-6   xsm:col-span-6  w-full h-full ">
           <div className="px-10 py-10">
             <div>
-              <p className="text-lg font-Poppins_SemiBold ">About Me</p>
+              <p className="text-3xl font-Poppins_SemiBold mb-5 ">About Me</p>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                Hello, I'm Haileliul Baye 👋, a passionate and ambitious
+                software engineer with a diverse set of skills. I specialize in
+                MERN stack development 💻, Flutter mobile app creation 📱,
+                machine learning 🤖, AI, and UI/UX design 🎨. Currently pursuing
+                a BSc in Software Engineering from Bahir Dar University, I have
+                built a strong foundation through both education and hands-on
+                experience. I’ve worked with various technologies, from creating
+                cross-platform mobile apps to full-stack web applications, and
+                I’m always eager to learn and explore emerging technologies 🚀.
+                As a co-founder of Devssinia Software Company and a contributor
+                to projects like INSA Cyber Talent, I am dedicated to solving
+                real-world problems with innovative digital solutions 🌍.
               </p>
             </div>
             <div className="mt-5">

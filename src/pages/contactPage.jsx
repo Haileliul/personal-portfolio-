@@ -5,7 +5,10 @@ import Com from "../components/index";
 const contactPage = () => {
   return (
     <div className=" container flex justify-center items-center bg-gray-50 ">
-      <div className="w-11/12  h-fit grid lg:grid-cols-2 my-40 shadow-lg mx-20 bg-background py-10 ">
+      <p className="text-3xl font-Poppins_SemiBold mb-5  text-Brighter_purple mt-20">
+        Contact Us
+      </p>
+      <div className="w-11/12  h-fit grid lg:grid-cols-2  mb-10 shadow-lg mx-20 bg-background py-10 ">
         <div className=" hidden  lg:grid lg:grid-rows-4   col-span-1 ml-20  ">
           <div className=" lg:row-span-3 w-4/5  mt-10">
             <iframe

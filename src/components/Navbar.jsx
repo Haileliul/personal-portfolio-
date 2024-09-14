@@ -22,12 +22,12 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex flex-grow justify-end items-center px-5 ">
         <ul className="flex flex-row gap-2">
-          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold hover:cursor-pointer ">
             <Link to="LandingPage" smooth={true} duration={500} spy={true}>
               Home
             </Link>
           </li>
-          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold hover:cursor-pointer">
             <Link
               to="AboutPage"
               smooth={true}
@@ -38,7 +38,7 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold hover:cursor-pointer ">
             <Link
               to="ProjectPage"
               smooth={true}
@@ -49,7 +49,7 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold ">
+          <li className="hover:border-b-2 border-acitive  py-2 px-4 hover:text-acitive text-xl font-bold hover:cursor-pointer">
             <Link
               to="ContactPage"
               smooth={true}
@@ -92,7 +92,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-black hover:text-acitive"
+                className="text-black hover:text-acitive hover:cursor-pointer"
                 onClick={toggleMenu}
               >
                 Home
@@ -104,7 +104,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-black hover:text-acitive"
+                className="text-black hover:text-acitive hover:cursor-pointer"
                 onClick={toggleMenu}
               >
                 About
@@ -116,7 +116,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-black hover:text-acitive"
+                className="text-black hover:text-acitive hover:cursor-pointer"
                 onClick={toggleMenu}
               >
                 Projects
@@ -128,7 +128,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                className="text-black hover:text-acitive"
+                className="text-black hover:text-acitive hover:cursor-pointer"
                 onClick={toggleMenu}
               >
                 Contact

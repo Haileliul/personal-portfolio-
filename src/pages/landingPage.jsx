@@ -145,28 +145,16 @@ const LandingPage = () => {
                     in AI, I bring a unique perspective to creating innovative
                     and user-centric solutions.
                   </p>
-
-                  <button
-                    className="bg-acitive hover:bg-Darker_purple bg-orange shadow-lg  shadow-deep_green  rounded-lg px-5 py-2 mt-2 text-neutral_tow  text-sm relative z-50"
-                    onClick={() => {
-                      console.log("The Button has been clicked");
-                    }}
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1vr-U4dbQQv4bY82cXKpFF7XqLVQRRod0"
+                    download="Haileliul_Baye_CV.pdf"
+                    className="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-acitive bg-orange shadow-lg mt-10 px-4 py-2 rounded-lg tracking-wide text-white hover:cursor-pointer z-50 relative"
                   >
-                    Download CV
-                  </button>
+                    <span class="ml-2"> Download CV 📥</span>
+                  </a>
                 </div>
               </div>
 
-              {/*  <div className="bg-green-900 w-full sm:w-1/2 h-full flex justify-center items-center">
-              <div>
-              <div className="sun-horizon"></div>
-              </div>
-              <img
-                src={Images.I4}
-                alt=""
-                className="object-cover h-5/6 sm:max-h-5/6 flex-1"
-              />
-            </div> */}
               <div className="relative w-full sm:w-1/2 h-full flex justify-center items-center  opacity-90">
                 {/* Horizon-like element */}
                 <div className="absolute inset-0 bg-gradient-to-t  to-yellow-50"></div>
