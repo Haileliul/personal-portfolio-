@@ -175,48 +175,54 @@ const project = [
 
 const certeficate = [
   {
-    img: Image.I1,
-    title: "Web Project 1",
+    img: Image.C_Kuraz,
+    title: "Kuraz Technology",
     web_url: "/webproject1",
   },
   {
-    img: Image.I2,
-    title: "Web Project 2",
+    img: Image.C_founder,
+    title: "ALX Founders ",
     web_url: "/webproject1",
   },
   {
-    img: Image.I1,
-    title: "Web Project 1",
+    img: Image.C_Satcom,
+    title: "Satcom Technology",
     web_url: "/webproject1",
   },
   {
-    img: Image.I2,
-    title: "Web Project 2",
+    img: Image.C_Advent,
+    title: "Advent of Cyber Security",
     web_url: "/webproject1",
   },
   {
-    img: Image.I1,
-    title: "Web Project 1",
+    img: Image.C_Insa,
+    title: "INSA Cyber Talent",
     web_url: "/webproject1",
   },
   {
-    img: Image.I2,
-    title: "Web Project 2",
+    img: Image.C_Pantech,
+    title: "ML Pantech Solution",
     web_url: "/webproject1",
   },
   {
-    img: Image.I3,
-    title: "Mobile Project 1",
+    img: Image.C_IntroCyber,
+    title: "Cisco Cyber Security",
+    web_url: "/webproject1",
+  },
+
+  {
+    img: Image.C_Tadios,
+    title: "Tadios Mobile app Dev",
     web_url: "/webproject1",
   },
   {
-    img: Image.I4,
-    title: "Mobile Project 2",
+    img: Image.C_huwawi,
+    title: "AI Huwawi webinar",
     web_url: "/webproject1",
   },
   {
-    img: Image.I5,
-    title: "Other Project 1",
+    img: Image.C_Datamite,
+    title: "AI Datamite Program",
     web_url: "/webproject1",
   },
 ];

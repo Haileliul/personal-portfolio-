@@ -70,8 +70,12 @@ const projectPage = () => {
 
       <div className="container bg-gradient-to-tr bg-gray-50" id="projects">
         <div className="flex flex-col inset-0 items-center text-neutral_tow">
-          <p className="my-5 text-lg sm:text-2xl"></p>
-          <p className="text-xl sm:text-3xl font-Poppins_SemiBold mb-5 text-Brighter_purple">
+          {/* Responsive heading */}
+          <p className="my-5 text-base sm:text-2xl md:text-3xl lg:text-4xl">
+            {/* Optional text content */}
+          </p>
+          {/* Responsive subheading */}
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-Poppins_SemiBold mb-5 text-Brighter_purple">
             Projects
           </p>
           <div className="flex flex-col px-4 sm:px-10">
@@ -79,7 +83,7 @@ const projectPage = () => {
               <button
                 className={`flex-1 ${
                   toggleState === 1 ? "bg-acitive" : "bg-Darker_purple"
-                } rounded-l-3xl`}
+                } rounded-l-3xl text-sm sm:text-base md:text-lg`}
                 onClick={() => {
                   toggleTab_hundler(1);
                 }}
@@ -89,7 +93,7 @@ const projectPage = () => {
               <button
                 className={`flex-1 ${
                   toggleState === 2 ? "bg-acitive" : "bg-Darker_purple"
-                }`}
+                } text-sm sm:text-base md:text-lg`}
                 onClick={() => {
                   toggleTab_hundler(2);
                 }}
@@ -99,7 +103,7 @@ const projectPage = () => {
               <button
                 className={`flex-1 ${
                   toggleState === 3 ? "bg-acitive" : "bg-Darker_purple"
-                } rounded-r-3xl`}
+                } rounded-r-3xl text-sm sm:text-base md:text-lg`}
                 onClick={() => {
                   toggleTab_hundler(3);
                 }}
