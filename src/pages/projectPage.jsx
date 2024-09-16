@@ -27,7 +27,7 @@ const projectPage = () => {
   }
   return (
     <div className="container bg-gradient-to-tr  bg-gray-50" id="projects">
-      <div className="flex flex-col inset-0 items-center text-neutral_tow ">
+      {/*  <div className="flex flex-col inset-0 items-center text-neutral_tow ">
         <p className="my-5 text-2xl"></p>
         <p className="text-3xl font-Poppins_SemiBold mb-5  text-Brighter_purple">
           Projects
@@ -64,6 +64,49 @@ const projectPage = () => {
             >
               Others
             </button>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="container bg-gradient-to-tr bg-gray-50" id="projects">
+        <div className="flex flex-col inset-0 items-center text-neutral_tow">
+          <p className="my-5 text-lg sm:text-2xl"></p>
+          <p className="text-xl sm:text-3xl font-Poppins_SemiBold mb-5 text-Brighter_purple">
+            Projects
+          </p>
+          <div className="flex flex-col px-4 sm:px-10">
+            <div className="w-full sm:w-[400px] h-[50px] flex self-center mb-5">
+              <button
+                className={`flex-1 ${
+                  toggleState === 1 ? "bg-acitive" : "bg-Darker_purple"
+                } rounded-l-3xl`}
+                onClick={() => {
+                  toggleTab_hundler(1);
+                }}
+              >
+                WebSite
+              </button>
+              <button
+                className={`flex-1 ${
+                  toggleState === 2 ? "bg-acitive" : "bg-Darker_purple"
+                }`}
+                onClick={() => {
+                  toggleTab_hundler(2);
+                }}
+              >
+                Mobile
+              </button>
+              <button
+                className={`flex-1 ${
+                  toggleState === 3 ? "bg-acitive" : "bg-Darker_purple"
+                } rounded-r-3xl`}
+                onClick={() => {
+                  toggleTab_hundler(3);
+                }}
+              >
+                Others
+              </button>
+            </div>
           </div>
         </div>
       </div>
