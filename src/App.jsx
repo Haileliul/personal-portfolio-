@@ -38,6 +38,10 @@ export default function App() {
         <Element name="ProjectPage">
           <Pages.ProjectPage />
         </Element>
+        <Element name="certeficate">
+          <Pages.CerteficatePage />
+        </Element>
+
         <Element name="ContactPage">
           <Pages.ContactPage />
         </Element>

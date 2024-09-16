@@ -5,6 +5,7 @@ import CardOfabout from "./cardOfAbout";
 import Speeddial from "./speeddial";
 import TimeLIne from "./Timeline";
 import Footerbar from "./bottombar";
+import CardOfcerteficate from "./certeficateCard";
 
 const Components = {
   Navbar,
@@ -14,5 +15,6 @@ const Components = {
   Speeddial,
   TimeLIne,
   Footerbar,
+  CardOfcerteficate,
 };
 export default Components;

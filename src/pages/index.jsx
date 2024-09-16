@@ -5,6 +5,7 @@ import ContactPage from "./contactPage";
 import SkillPage from "./SkillPage";
 import EducationPage from "./EducationPage";
 import ExperiancePage from "./ExperiancePage";
+import CerteficatePage from "./certeficatesPage";
 
 const Pages = {
   LandingPage,
@@ -14,5 +15,6 @@ const Pages = {
   SkillPage,
   EducationPage,
   ExperiancePage,
+  CerteficatePage,
 };
 export default Pages;

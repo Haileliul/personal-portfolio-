@@ -1,3 +1,5 @@
+import Image from "../assets";
+
 const Contacts = {
   info: [
     "Phone: +1 123 456 7890",
@@ -105,11 +107,127 @@ const Skill = [
   },
 ];
 
+const project = [
+  {
+    img: Image.I1,
+    title: "Web Project 1",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "web",
+  },
+  {
+    img: Image.I2,
+    title: "Web Project 2",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "web",
+  },
+  {
+    img: Image.I1,
+    title: "Web Project 1",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "web",
+  },
+  {
+    img: Image.I2,
+    title: "Web Project 2",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "web",
+  },
+  {
+    img: Image.I1,
+    title: "Web Project 1",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "web",
+  },
+  {
+    img: Image.I2,
+    title: "Web Project 2",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "web",
+  },
+  {
+    img: Image.I3,
+    title: "Mobile Project 1",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "mobile",
+  },
+  {
+    img: Image.I4,
+    title: "Mobile Project 2",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "mobile",
+  },
+  {
+    img: Image.I5,
+    title: "Other Project 1",
+    web_url: "/webproject1",
+    github_url: "/github",
+    type: "others",
+  },
+];
+
+const certeficate = [
+  {
+    img: Image.I1,
+    title: "Web Project 1",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I2,
+    title: "Web Project 2",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I1,
+    title: "Web Project 1",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I2,
+    title: "Web Project 2",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I1,
+    title: "Web Project 1",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I2,
+    title: "Web Project 2",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I3,
+    title: "Mobile Project 1",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I4,
+    title: "Mobile Project 2",
+    web_url: "/webproject1",
+  },
+  {
+    img: Image.I5,
+    title: "Other Project 1",
+    web_url: "/webproject1",
+  },
+];
+
 const Data = {
   Contacts,
   Education,
   Experiance,
   Skill,
+  project,
+  certeficate,
 };
 
 export default Data;

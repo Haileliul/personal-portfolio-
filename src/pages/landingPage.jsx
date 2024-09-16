@@ -150,7 +150,7 @@ const LandingPage = () => {
                     download="Haileliul_Baye_CV.pdf"
                     className="animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-acitive bg-orange shadow-lg mt-10 px-4 py-2 rounded-lg tracking-wide text-white hover:cursor-pointer z-50 relative"
                   >
-                    <span class="ml-2"> Download CV 📥</span>
+                    <span className="ml-2"> Download CV 📥</span>
                   </a>
                 </div>
               </div>

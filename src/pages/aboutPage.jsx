@@ -92,7 +92,7 @@ const aboutPage = () => {
                       Education
                     </button>
                   </li>
-                  <li role="presentation">
+                  {/*  <li role="presentation">
                     <button
                       className="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                       id="contacts-styled-tab"
@@ -104,7 +104,7 @@ const aboutPage = () => {
                     >
                       Contacts
                     </button>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div id="default-styled-tab-content">
@@ -149,12 +149,6 @@ const aboutPage = () => {
                   </p>
                 </div>
               </div>
-
-              <ul className="inline-flex gap-20 text-lg font-Poppins_Medium">
-                {/* <Link to={"/skill"}>Skill</Link>
-                <Link to={"/experiance"}>Experiance</Link>
-                <Link to={"/education"}>Education</Link> */}
-              </ul>
             </div>
           </div>
         </div>

@@ -1,42 +1,30 @@
 import React, { useState } from "react";
 import Com from "../components";
-import Image from "../assets";
+import Data from "../utils/data";
 
 const projectPage = () => {
+  const projects = Data.project;
+
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab_hundler = (index) => {
     setToggleState(index);
   };
 
-  const projects = {
-    web: [
-      { img: Image.I1, title: "Web Project 1", route: "/webproject1" },
-      { img: Image.I2, title: "Web Project 2", route: "/webproject2" },
-      { img: Image.I1, title: "Web Project 1", route: "/webproject1" },
-      { img: Image.I2, title: "Web Project 2", route: "/webproject2" },
-      { img: Image.I1, title: "Web Project 1", route: "/webproject1" },
-      { img: Image.I2, title: "Web Project 2", route: "/webproject2" },
-    ],
-    mobile: [
-      { img: Image.I3, title: "Mobile Project 1", route: "/mobileproject1" },
-      { img: Image.I4, title: "Mobile Project 2", route: "/mobileproject2" },
-    ],
-    others: [
-      { img: Image.I5, title: "Other Project 1", route: "/otherproject1" },
-      { img: Image.I6, title: "Other Project 2", route: "/otherproject2" },
-    ],
+  // Function to filter projects based on the type
+  const filterProjectsByType = (type) => {
+    return projects.filter((project) => project.type === type);
   };
 
+  // Usage based on toggleState
   let currentProjects;
   if (toggleState === 1) {
-    currentProjects = projects.web;
+    currentProjects = filterProjectsByType("web");
   } else if (toggleState === 2) {
-    currentProjects = projects.mobile;
+    currentProjects = filterProjectsByType("mobile");
   } else {
-    currentProjects = projects.others;
+    currentProjects = filterProjectsByType("others");
   }
-
   return (
     <div className="container bg-gradient-to-tr  bg-gray-50" id="projects">
       <div className="flex flex-col inset-0 items-center text-neutral_tow ">
@@ -86,7 +74,8 @@ const projectPage = () => {
             <Com.CardOfpro
               img={project.img}
               title={project.title}
-              route={project.route}
+              web_url={project.web_url}
+              githubLink={project.github_url}
             />
           );
         })}
