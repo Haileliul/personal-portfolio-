@@ -92,24 +92,11 @@ const aboutPage = () => {
                       Education
                     </button>
                   </li>
-                  {/*  <li role="presentation">
-                    <button
-                      className="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                      id="contacts-styled-tab"
-                      data-tabs-target="#styled-contacts"
-                      type="button"
-                      role="tab"
-                      aria-controls="contacts"
-                      aria-selected="false"
-                    >
-                      Contacts
-                    </button>
-                  </li> */}
                 </ul>
               </div>
               <div id="default-styled-tab-content">
                 <div
-                  className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+                  className=" p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
                   id="styled-profile"
                   role="tabpanel"
                   aria-labelledby="profile-tab"
@@ -117,7 +104,7 @@ const aboutPage = () => {
                   <Pages.SkillPage />
                 </div>
                 <div
-                  className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+                  className=" p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
                   id="styled-dashboard"
                   role="tabpanel"
                   aria-labelledby="dashboard-tab"
@@ -125,14 +112,14 @@ const aboutPage = () => {
                   <Pages.ExperiancePage />
                 </div>
                 <div
-                  className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+                  className=" p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
                   id="styled-settings"
                   role="tabpanel"
                   aria-labelledby="settings-tab"
                 >
                   <Pages.EducationPage />
                 </div>
-                <div
+                {/*  <div
                   className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
                   id="styled-contacts"
                   role="tabpanel"
@@ -147,7 +134,7 @@ const aboutPage = () => {
                     one for the next. The tab JavaScript swaps classes to
                     control the content visibility and styling.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -111,8 +111,8 @@ const project = [
   {
     img: Image.I1,
     title: "Web Project 1",
-    web_url: "/webproject1",
-    github_url: "/github",
+    web_url: "https://web.telegram.org/k/#@HB767",
+    github_url: "https://www.youtube.com/",
     type: "web",
   },
   {
