@@ -162,9 +162,9 @@ const LandingPage = () => {
                 {/* Image container */}
                 <div className="relative w-full h-full flex items-center justify-center ">
                   <img
-                    src={Images.I4}
+                    src={Images.H1_Photo}
                     alt=""
-                    className="object-contain  lg:h-5/6 md:h-5/6 xsm:max-h-3/4  sm:max-h-3/4 flex-1 "
+                    className="object-contain  lg:h-5/6 md:h-5/6 xsm:max-h-2/4  sm:max-h-3/4 flex-1 "
                   />
                 </div>
               </div>

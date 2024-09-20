@@ -39,7 +39,8 @@ function Card_project({ img, title, web_url, description, type, githubLink }) {
               url={web_url}
               loop={true}
               playing={true}
-              light={true}
+              light={true} // You can turn off the light mode if you want the video to play immediately
+              muted={isHovered} // This ensures autoplay will work in most browsers
               width="100%"
               height="100%"
             />

@@ -14,6 +14,8 @@ import C_Pantech from "./Images/Pntech.jpg";
 import C_Satcom from "./Images/satcom.jpeg";
 import C_Tadios from "./Images/tadios.jpg";
 import C_huwawi from "./Images/huwawi.png";
+import web_music from "./Images/web_musicApp.png";
+import H1_Photo from "./Images/Short_photo2.png";
 
 const Images = {
   I1,
@@ -31,6 +33,8 @@ const Images = {
   C_Satcom,
   C_Tadios,
   C_huwawi,
+  web_music,
+  H1_Photo,
 };
 
 export default Images;

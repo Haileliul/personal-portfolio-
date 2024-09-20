@@ -126,12 +126,13 @@ const Skill = [
 const project = [
   {
     id: 1,
-    img: Image.I1,
-    title: "Web Project 1",
-    web_url: "https://web.telegram.org/k/#@HB767",
-    github_url: "https://www.youtube.com/",
+    img: Image.web_music,
+    title: "MusicPlayList APP",
+    web_url: "https://addis-project-frontend.onrender.com/",
+    github_url: "https://github.com/Haileliul/Addis_Project.git",
     type: "web",
-    description: "haha",
+    description:
+      " I developed a full-stack application using the MERN stack. The project includes both client-side and server-side development, showcasing my ability to create and integrate a full-stack application.",
   },
   {
     id: 2,
