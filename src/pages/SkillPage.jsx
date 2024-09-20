@@ -18,7 +18,7 @@ const SkillPage = () => {
                 >
                   {skill.percent}%
                 </span>
-                <span class="text-base font-medium text-Blue_black dark:text-white ">
+                <span className=" font-medium text-Blue_black dark:text-white text-xs sm:text-sm  lg:text-base   ">
                   {skill.Skill_title}
                 </span>
               </div>

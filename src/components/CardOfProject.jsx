@@ -1,7 +1,8 @@
 import { FaGithub } from "react-icons/fa"; // Import GitHub icon from react-icons
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ReactPlayer from "react-player";
 
-function Card_project({ img, title, web_url, githubLink }) {
+function Card_project({ img, title, web_url, description, type, githubLink }) {
   const [isHovered, setIsHovered] = useState(false);
 
   // Function to open the project link in a new tab when the card is clicked
@@ -22,14 +23,28 @@ function Card_project({ img, title, web_url, githubLink }) {
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleCardClick} // Trigger the project link opening in a new tab
     >
-      <div className="relative block w-[200px] h-[170px] overflow-hidden">
-        <img
-          src={img}
-          alt=""
-          className={`w-full h-full object-cover transition-transform duration-300 ${
-            isHovered ? "scale-110" : ""
-          }`}
-        />
+      <div className="relative block w-[300px] h-[170px] overflow-hidden">
+        {type !== "mobile" ? (
+          <img
+            src={img}
+            alt=""
+            className={`w-full h-full object-cover transition-transform duration-300 ${
+              isHovered ? "scale-110" : ""
+            }`}
+          />
+        ) : (
+          <div className="player-wrapper">
+            <ReactPlayer
+              className="react-player"
+              url={web_url}
+              loop={true}
+              playing={true}
+              light={true}
+              width="100%"
+              height="100%"
+            />
+          </div>
+        )}
 
         {/* GitHub icon, clickable without triggering card click */}
         <a
@@ -44,9 +59,9 @@ function Card_project({ img, title, web_url, githubLink }) {
         <h5 className="text-lg font-bold tracking-tight text-gray-700 dark:text-white py-1">
           {title}
         </h5>
-        <div className="w-[200px]">
-          <p className="font-normal text-gray-500 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of
+        <div className="w-[300px] ">
+          <p className="font-normal text-sm text-gray-500 dark:text-gray-400">
+            {description}
           </p>
         </div>
       </div>

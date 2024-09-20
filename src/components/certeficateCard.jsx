@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function CardCertificate({ img, title, modalContent }) {
+function CardCertificate({ img, title }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -44,10 +44,17 @@ function CardCertificate({ img, title, modalContent }) {
 
       {/* Modal Component */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg w-full">
+        <div className="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg w-full ">
             <h2 className="text-xl font-bold mb-4">{title}</h2>
-            <p>{modalContent}</p>
+
+            <div className="w-[100%] h-[60%] rounded-lg">
+              <img
+                src={img}
+                alt={`This is place for ${title}`}
+                className="w-full h-full inset-0 object-fill rounded-lg"
+              />
+            </div>
             <button
               className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
               onClick={closeModal}

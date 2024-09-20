@@ -17,6 +17,7 @@ const certeficatePage = () => {
         {certeficates.map((certeficate) => {
           return (
             <Com.CardOfcerteficate
+              key={certeficate.id}
               img={certeficate.img}
               title={certeficate.title}
               web_url={certeficate.web_url}

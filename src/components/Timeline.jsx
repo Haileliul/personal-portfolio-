@@ -29,20 +29,6 @@ const Education_TimeLine = (props) => {
         );
       })}
     </div>
-    /*    <Timeline>
-      <Timeline.Item color="red">
-        <Timeline.Point icon={HiCalendar} />
-        <Timeline.Content className="px-10">
-          <Timeline.Time>February 2022</Timeline.Time>
-          <Timeline.Title>Application UI code in Tailwind CSS</Timeline.Title>
-          <Timeline.Body>
-            Get access to over 20+ pages including a dashboard layout, charts,
-            kanban board, calendar, and pre-order E-commerce & Marketing pages.
-          </Timeline.Body>
-        
-        </Timeline.Content>
-      </Timeline.Item>
-    </Timeline> */
   );
 };
 
