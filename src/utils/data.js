@@ -136,12 +136,13 @@ const project = [
   },
   {
     id: 2,
-    img: Image.I2,
-    title: "Web Project 2",
-    web_url: "/webproject1",
-    github_url: "/github",
+    img: Image.web_country,
+    title: "World DataResourse",
+    web_url: "https://countrysearch-xilj.onrender.com/",
+    github_url: "https://github.com/Haileliul/countrySearch.git",
     type: "web",
-    description: "haha",
+    description:
+      "Welcome to my World Data project! This project showcases my skills, projects, and experiences. It's built using modern web development technologies and serves as a dynamic way to present my work to potential employers, clients, and collaborators.I have used Reactjs, tailwind css, redux toolkit ",
   },
   {
     id: 3,
