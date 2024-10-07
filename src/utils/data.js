@@ -146,40 +146,16 @@ const project = [
   },
   {
     id: 3,
-    img: Image.I1,
-    title: "Web Project 1",
-    web_url: "/webproject1",
-    github_url: "/github",
+    img: Image.web_Turism,
+    title: "Ethiopian Tourism",
+    web_url: "https://ethiopian-tourism.onrender.com/",
+    github_url:
+      "https://github.com/Haileliul/Ethiopian_Tourism_Application.git",
     type: "web",
-    description: "haha",
+    description:
+      "This project involves creating a simple, two-page application for an Ethiopian tourism agency as part of a UX/UI React Developer assessment. The goal was to design and implement a functional and aesthetically pleasing interface, showcasing the attractions of Ethiopia while ensuring smooth navigation and responsiveness across devices.",
   },
-  {
-    id: 4,
-    img: Image.I2,
-    title: "Web Project 2",
-    web_url: "/webproject1",
-    github_url: "/github",
-    type: "web",
-    description: "haha",
-  },
-  {
-    id: 5,
-    img: Image.I1,
-    title: "Web Project 1",
-    web_url: "/webproject1",
-    github_url: "/github",
-    type: "web",
-    description: "haha",
-  },
-  {
-    id: 6,
-    img: Image.I2,
-    title: "Web Project 2",
-    web_url: "/webproject1",
-    github_url: "/github",
-    type: "web",
-    description: "haha",
-  },
+
   {
     id: 7,
     img: Image.I3,

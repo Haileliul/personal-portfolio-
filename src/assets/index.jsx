@@ -16,6 +16,7 @@ import C_Tadios from "./Images/tadios.jpg";
 import C_huwawi from "./Images/huwawi.png";
 import web_music from "./Images/web_musicApp.png";
 import web_country from "./Images/webCountry.png";
+import web_Turism from "./Images/web_Turism.png";
 import H1_Photo from "./Images/Short_photo2.png";
 import H2_Photo from "./Images/style_photo.png";
 
@@ -39,6 +40,7 @@ const Images = {
   H1_Photo,
   H2_Photo,
   web_country,
+  web_Turism,
 };
 
 export default Images;
