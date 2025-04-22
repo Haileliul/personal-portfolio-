@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## Demo
 
-Check out the live demo of my portfolio [here](https://personal-portfolio-7jpe.onrender.com/).
+Check out the live demo of my portfolio [here](https://haileliul-baye-portifolio.onrender.com/).
  ```bash
  https://personal-portfolio-7jpe.onrender.com/
  ```
